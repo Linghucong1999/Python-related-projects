@@ -1,18 +1,22 @@
+import os
+
+
 URL = 'https://app.isellerpal.com/api-product/best-seller-1000-list'
-OPEN_URL = 'https://app.isellerpal.com/analysis/besetseller'
-# URL = 'https://app.isellerpal.com/api-data/performance-dashboard'
-# URL = 'http://localhost:8888/video/best-seller-1000-list'
 METHOD = 'POST'
 
-Cookie = 'Hm_lvt_3af9f141533380899e8c0acc32b1bcae=1722215569; HMACCOUNT=8436478169709B3C; guestId=1e4bb37b6ffc456b85741444fe19c268; token=eyJhbGciOiJIUzUxMiJ9.eyJ0ZW5hbnRfaWQiOjE2MTIxNywic3ViIjoiMTYxMjE3IiwiaWF0IjoxNzIyMjE1NjE1LCJleHAiOjE3MjI4MjA0MTV9.oPvBQ2oPKLW9hbvLRuiaeK98d9wp1-2cvJX7hdla6D6fFoJXYbdPGvbnEA8VyRHyjZPyW1zFFF325kL10_P1IA; Hm_lpvt_3af9f141533380899e8c0acc32b1bcae=1722215802'
+Cookie = 'guestId=b6338646d7d54633a479eeb69982ce99; Hm_lvt_282b3ee77c50ff5447b7b85d121a397d=1722082749; Hm_lvt_3af9f141533380899e8c0acc32b1bcae=1722002528,1722349973; HMACCOUNT=936E517E1196FE4B; token=eyJhbGciOiJIUzUxMiJ9.eyJ0ZW5hbnRfaWQiOjE2MTIxNywic3ViIjoiMTYxMjE3IiwiaWF0IjoxNzIyMzQ5OTk1LCJleHAiOjE3MjI5NTQ3OTV9.bVuD341t5WRBY3pD0iTyyq63eqVIddDp-LLgqTk69trPerbJyN_Wu3VmVIIqWSN8vpi7R4p9rLkQIdhVkVMXbw; Hm_lpvt_3af9f141533380899e8c0acc32b1bcae=1722528993'
 
+isp_token='eyJhbGciOiJIUzUxMiJ9.eyJ0ZW5hbnRfaWQiOjE2MTIxNywic3ViIjoiMTYxMjE3IiwiaWF0IjoxNzIyMzQ5OTk1LCJleHAiOjE3MjI5NTQ3OTV9.bVuD341t5WRBY3pD0iTyyq63eqVIddDp-LLgqTk69trPerbJyN_Wu3VmVIIqWSN8vpi7R4p9rLkQIdhVkVMXbw'
+
+csrf_token = os.popen('node ./index.js').read().strip()
+print(csrf_token)
 Headers = {
     "accept": "application/json, text/plain, */*",
     "accept-language": "zh-CN,zh;q=0.9",
     "cache-control": "no-cache",
     "content-type": "application/json;charset=UTF-8",
-    "csrf-token": "4KWq41BNtTOLkOSClLXRWD8aRKuOTpgX2Bnzzpupb2M=",
-    "isp-token": "eyJhbGciOiJIUzUxMiJ9.eyJ0ZW5hbnRfaWQiOjE2MTIxNywic3ViIjoiMTYxMjE3IiwiaWF0IjoxNzIyMjE1NjE1LCJleHAiOjE3MjI4MjA0MTV9.oPvBQ2oPKLW9hbvLRuiaeK98d9wp1-2cvJX7hdla6D6fFoJXYbdPGvbnEA8VyRHyjZPyW1zFFF325kL10_P1IA",
+    "csrf-token": 'TSVCVm2XrPKbvV4OKgwCKCMSFi/8rPa4jekzYLafypc=',
+    "isp-token": isp_token,
     "pragma": "no-cache",
     "sec-ch-ua": "\"Not)A;Brand\";v=\"99\", \"Google Chrome\";v=\"127\", \"Chromium\";v=\"127\"",
     "sec-ch-ua-mobile": "?0",

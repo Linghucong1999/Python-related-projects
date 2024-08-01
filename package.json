@@ -1,0 +1,11 @@
+{
+  "name": "callphone",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Linghucong1999/Python-related-projects.git",
+  "author": "mika <2865911620@qq.com>",
+  "license": "MIT",
+  "dependencies": {
+    "crypto-js": "^4.2.0"
+  }
+}
