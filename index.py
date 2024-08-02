@@ -39,7 +39,7 @@ if __name__ == "__main__":
             continue
         asin = clean_data(data)
         asin_storage.extend(asin)
-        time.sleep(100)
+        time.sleep(2)
 
     df = pd.DataFrame(asin_storage, columns=['ASIN'])
     excel_path = 'asin.xlsx'
