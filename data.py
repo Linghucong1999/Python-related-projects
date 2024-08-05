@@ -6,8 +6,9 @@ METHOD = 'POST'
 # 加密数据传输
 csrf_token = os.popen('node ./index.js').read().strip()
 
-isp_token = 'eyJhbGciOiJIUzUxMiJ9.eyJ0ZW5hbnRfaWQiOjE2MTIxNywic3ViIjoiMTYxMjE3IiwiaWF0IjoxNzIyNjA3NTU0LCJleHAiOjE3MjMyMTIzNTR9.spVdmeC8FINw3Fi9eKfcTQ_Zkw_PnPoy813ydy0iHrlotsrh1cdz5WdBCbe-R3akSWgjayca9X8Tzpv3o1rTDA'
-cookies = 'guestId=b6338646d7d54633a479eeb69982ce99; Hm_lvt_282b3ee77c50ff5447b7b85d121a397d=1722082749; Hm_lvt_3af9f141533380899e8c0acc32b1bcae=1722002528,1722349973,1722607547; HMACCOUNT=936E517E1196FE4B; token=eyJhbGciOiJIUzUxMiJ9.eyJ0ZW5hbnRfaWQiOjE2MTIxNywic3ViIjoiMTYxMjE3IiwiaWF0IjoxNzIyNjA3NTU0LCJleHAiOjE3MjMyMTIzNTR9.spVdmeC8FINw3Fi9eKfcTQ_Zkw_PnPoy813ydy0iHrlotsrh1cdz5WdBCbe-R3akSWgjayca9X8Tzpv3o1rTDA; Hm_lpvt_3af9f141533380899e8c0acc32b1bcae=1722608540'
+isp_token = 'eyJhbGciOiJIUzUxMiJ9.eyJ0ZW5hbnRfaWQiOjE2MTIxNywic3ViIjoiMTYxMjE3IiwiaWF0IjoxNzIyODIyMzQzLCJleHAiOjE3MjM0MjcxNDN9.wh1WO7pc7MK4Z0AukFx1RiqTAKvK_xlpOK0-w7EmRQsLj7L7s5aU-CYQ81sN7zLCsB-k5oVxBCr8-d2yO-xZqw'
+
+cookies = 'guestId=1e4bb37b6ffc456b85741444fe19c268; Hm_lvt_3af9f141533380899e8c0acc32b1bcae=1722215569,1722822232; HMACCOUNT=8436478169709B3C; token=eyJhbGciOiJIUzUxMiJ9.eyJ0ZW5hbnRfaWQiOjE2MTIxNywic3ViIjoiMTYxMjE3IiwiaWF0IjoxNzIyODIyMzQzLCJleHAiOjE3MjM0MjcxNDN9.wh1WO7pc7MK4Z0AukFx1RiqTAKvK_xlpOK0-w7EmRQsLj7L7s5aU-CYQ81sN7zLCsB-k5oVxBCr8-d2yO-xZqw; Hm_lpvt_3af9f141533380899e8c0acc32b1bcae=1722822348'
 
 Headers = {
     "accept": "application/json, text/plain, */*",
@@ -32,22 +33,22 @@ Headers = {
 }
 
 DATA_RAW = {
-  "currentPage": 1,
-  "totalPage": 7732,
-  "pageSize": 50,
-  "total": 7732,
-  "region": "it",
-  "id": 46019,
-  "sortType": "ascending",
-  "sortName": "firstRank",
-  "title": "",
-  "brandName": "",
-  "sellerName": "",
-  "shippingType": "",
-  "location": "",
-  "sizeType": "",
-  "includeKeyword": "",
-  "excludeKeyword": "",
-  "asin": "",
-  "hide": True
+    "currentPage": 1,
+    "totalPage": 7732,
+    "pageSize": 50,
+    "total": 7732,
+    "region": "it",
+    "id": 46019,
+    "sortType": "ascending",
+    "sortName": "firstRank",
+    "title": "",
+    "brandName": "",
+    "sellerName": "",
+    "shippingType": "",
+    "location": "",
+    "sizeType": "",
+    "includeKeyword": "",
+    "excludeKeyword": "",
+    "asin": "",
+    "hide": True
 }

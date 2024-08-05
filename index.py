@@ -36,7 +36,7 @@ if __name__ == "__main__":
             continue
         asin = clean_data(data)
         asin_storage.extend(asin)
-        time.sleep(2)
+        time.sleep(10)
     df = pd.DataFrame(asin_storage, columns=['ASIN', 'BrandName'])
     ground = df.groupby('BrandName')['ASIN'].apply(list).reset_index()
     excel_path = 'asin.xlsx'
